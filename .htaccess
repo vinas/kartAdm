@@ -1,0 +1,6 @@
+RewriteEngine on
+RewriteBase /
+RewriteCond %{SCRIPT_FILENAME} !-f
+RewriteCond %{SCRIPT_FILENAME} !-d
+RewriteRule ^kartAdm/(.*)$ /kartAdm/public_html/
+RewriteRule ^kartAdm/api/(.*)$ /apiIndex.php?bsurl=$1
